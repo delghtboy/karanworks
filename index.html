@@ -51,11 +51,11 @@
       position: relative;
     }
 
-    .profile-card img.logo {
+    .logo-video {
       width: 80px;
       height: 80px;
-      object-fit: cover;
       border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 15px;
       box-shadow: 0 0 20px #6f00ff;
       animation: pulseGlow 2s infinite alternate;
@@ -148,7 +148,11 @@
   </video>
 
   <div class="profile-card">
-    <img src="logo.mp4" alt="Logo" class="logo">
+    <!-- MP4 Logo Video -->
+    <video autoplay muted loop playsinline class="logo-video">
+      <source src="logo.mp4" type="video/mp4">
+    </video>
+
     <h1>KARAN !!</h1>
     <div class="profile-info">
       <img src="profile.jpg" alt="Profile Picture">
